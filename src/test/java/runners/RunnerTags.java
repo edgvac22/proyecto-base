@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions (
                               features = "src/test/resources/features/academyChoucair.feature",
                               tags = "@Regresion",
-                              glue = " co.com.choucair.certification.proyectobase.stepdefinitions",
+                              glue = " co.com.choucair.certification.proy" +
+                                      "ectobase.stepdefinitions",
                               snippets = SnippetType.CAMELCASE)
 
 public class RunnerTags {
