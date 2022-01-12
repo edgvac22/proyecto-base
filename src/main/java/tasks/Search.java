@@ -6,6 +6,8 @@ import net.serenitybdd.screenplay.Tasks;
 
 public class Search implements Task {
 
+    private String course;
+
     public static Search the(String course) {
         return Tasks.instrumented(Search.class);
     }
@@ -13,5 +15,9 @@ public class Search implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
+    }
+
+    public Search(String course) {
+        this.course = course;
     }
 }
