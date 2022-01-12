@@ -20,9 +20,9 @@ public class ChoucairAcademyStepDefinitions {
         OnStage.theActorCalled("Brandon").wasAbleTo(OpenUp.ThePage(), (Login.onThePage()));
     }
 
-    @When("^he search for the course Recursos Automatizacion Bancolombia on the choucair academy platform$")
-    public void heSearchForTheCourseRecursosAutomatizacionBancolombiaOnTheChoucairAcademyPlatform(){
-
+    @When("^he search for the course (.*) on the choucair academy platform$")
+    public void heSearchForTheCourseRecursosAutomatizacionBancolombiaOnTheChoucairAcademyPlatform(String course){
+        OnStage.theActorInTheSpotlight().attemptsTo(Search.the(course));
     }
 
     @Then("^he finds the course called resources Recursos Automatizacion Bancolombia$")
