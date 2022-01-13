@@ -8,7 +8,7 @@ import userinterface.SearchCoursePage;
 public class Answer implements Question<Boolean> {
 
     public Answer(String question) {
-        thisgiit.question = question;
+        this.question = question;
     }
 
     public static String toThe(String question) {
