@@ -11,7 +11,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 public class Login implements Task {
 
 
-    public static Performable onThePage() {
+    public static Login onThePage() {
         return Tasks.instrumented(Login.class);
     }
 
